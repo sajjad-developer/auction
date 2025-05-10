@@ -1,0 +1,65 @@
+[
+  {
+    "id": 1,
+    "title": "Fujifilm X-T10 Camera",
+    "description": "A compact and versatile mirrorless camera for photography enthusiasts.",
+    "currentBidPrice": 450,
+    "timeLeft": "2 days",
+    "bidsCount": 12,
+    "image": "https://i.imgur.com/XCZd8hu.png"
+  },
+  {
+    "id": 2,
+    "title": "Electric Guitar",
+    "description": "A high-quality electric guitar with a sleek design and powerful sound.",
+    "currentBidPrice": 300,
+    "timeLeft": "5 hours",
+    "bidsCount": 8,
+    "image": "https://i.imgur.com/5Ppsy0e.png"
+  },
+  {
+    "id": 3,
+    "title": "MacBook Pro",
+    "description": "A powerful laptop for professionals and creatives.",
+    "currentBidPrice": 1200,
+    "timeLeft": "1 day",
+    "bidsCount": 20,
+    "image": "https://i.imgur.com/vtyGcnD.png"
+  },
+  {
+    "id": 4,
+    "title": "Omega Seamaster Watch",
+    "description": "A luxury watch with precision and style.",
+    "currentBidPrice": 800,
+    "timeLeft": "3 days",
+    "bidsCount": 15,
+    "image": "https://i.imgur.com/MwoA0CI.png"
+  },
+  {
+    "id": 5,
+    "title": "Vintage Wooden Chair",
+    "description": "A classic wooden chair with intricate carvings.",
+    "currentBidPrice": 75,
+    "timeLeft": "12 hours",
+    "bidsCount": 5,
+    "image": "https://i.imgur.com/JOr3FQS.png"
+  },
+  {
+    "id": 6,
+    "title": "Milk and Honey Book",
+    "description": "A bestselling poetry book by Rupi Kaur.",
+    "currentBidPrice": 20,
+    "timeLeft": "6 hours",
+    "bidsCount": 3,
+    "image": "https://i.imgur.com/Y3aziq8.png"
+  },
+  {
+    "id": 7,
+    "title": "Floral Painting",
+    "description": "A stunning floral painting to enhance your home decor.",
+    "currentBidPrice": 150,
+    "timeLeft": "4 days",
+    "bidsCount": 10,
+    "image": "https://i.imgur.com/MgKkgYY.png"
+  }
+]
