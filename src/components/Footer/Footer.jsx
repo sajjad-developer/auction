@@ -1,21 +1,21 @@
 import React from "react";
 
-function Footer({ test }) {
+function Footer() {
   return (
-    <section className="sora bg-[#FFFFFF] h-80 space-y-6 flex flex-col justify-center items-center">
+    <section className=" bg-[#FFFFFF]  h-80 space-y-6 flex flex-col justify-center items-center">
       {/* left part */}
-      <div className="flex justify-center items-center font-bold text-4xl">
+      <div className="footer-left flex justify-center items-center font-bold text-4xl">
         <h1 className="text-[#003EA4] ">
           Auction<span className="text-[#FFD337]">Gallery</span>
         </h1>
       </div>
       {/* middle part */}
-      <div className="sora flex gap-7 justify-center items-center font-normal text-2xl text-[#000000]">
+      <div className="footer-middle flex gap-7 justify-center items-center font-normal text-2xl text-[#000000]">
         <a href="">Bid</a>
         <a href="">Win</a>
         <a href="">Own</a>
       </div>
-      <div className="poppins flex gap-7 justify-center items-center font-normal text-2xl text-[#000000]">
+      <div className="footer-right flex gap-7 justify-center items-center font-normal text-2xl text-[#000000]">
         <a href="">Home</a>
         <a href="">Auctions</a>
         <a href="">Categories</a>

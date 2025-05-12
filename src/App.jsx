@@ -1,30 +1,23 @@
-import { useState } from "react";
+import { Suspense, use, useEffect } from "react";
 import "./App.css";
-import Auctions from "./components/Auctions/Auctions";
-
-import Footer from "./components/Footer/Footer";
 import Header from "./components/Header/Header";
+import Auctions from "./components/Auctions/Auctions";
+import Footer from "./components/Footer/Footer";
 
-const fetchPromise = fetch("BidItems.json").then((res) => res.json());
-
+const fetchPromise = async () => {
+  const res = await fetch("/BidItems.json");
+  return res.json();
+};
 function App() {
-  const [items, setItems] = useState([]);
-
-  const handleItem = (item) => {
-    const newItems = [...items, item];
-    setItems(newItems);
-  };
+  const receivedPromise = fetchPromise();
 
   return (
     <>
-      <Header></Header>
-
-      {/* <Auctions
-        items={items}
-        handleItem={handleItem}
-        fetchPromise={fetchPromise}
-      ></Auctions> */}
-      <Footer>Some child content</Footer>
+      <Header />
+      <Suspense fallback={<h1>Items are coming....</h1>}>
+        <Auctions receivedPromise={receivedPromise}></Auctions>
+      </Suspense>
+      <Footer></Footer>
     </>
   );
 }

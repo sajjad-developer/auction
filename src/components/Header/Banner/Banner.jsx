@@ -5,7 +5,7 @@ const { bgImg } = styles;
 
 function Banner() {
   return (
-    <section className={`${bgImg}  pl-25`}>
+    <section className={`${bgImg}  pl-25 banner`}>
       <div className="w-[60%] space-y-12 pt-40  text-white ">
         <div className="space-y-4">
           <h1 className="font-semibold text-5xl ">Bid on Unique Items from</h1>

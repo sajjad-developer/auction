@@ -1,10 +1,9 @@
 import React from "react";
-import "./Navbar.css";
 import profilePicture from "../../../assets/icons/Avatar.svg";
 
 function Navbar() {
   return (
-    <section className="navbar poppins flex justify-around bg-gradient-to-r mask-b-from-orange-50 mask-b-to-orange-200">
+    <section className="navbar flex justify-around bg-gradient-to-r mask-b-from-orange-50 mask-b-to-orange-200">
       {/* left part */}
       <div className="flex justify-center items-center font-bold text-4xl">
         <h1 className="text-[#003EA4] ">
