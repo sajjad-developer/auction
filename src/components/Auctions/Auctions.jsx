@@ -1,14 +1,13 @@
 import { use } from "react";
-import { IoIosHeartEmpty } from "react-icons/io";
-import { AiOutlineHeart } from "react-icons/ai";
+
+import { AiOutlineHeart, AiFillHeart } from "react-icons/ai";
 
 import Auction from "../Auction/Auction";
 
 import FavoriteItems from "../FavoriteItems/FavoriteItems";
 
-function Auctions({ receivedPromise }) {
+function Auctions({ receivedPromise, handleItem, addedItems, addedBidPrice }) {
   const auctionsItems = use(receivedPromise);
-  console.log(auctionsItems);
 
   return (
     <section className="auctions bg-blue-50 sora  ">
@@ -42,17 +41,23 @@ function Auctions({ receivedPromise }) {
                     />
                   </td>
                   <td>{auctionItem.title}</td>
-                  <td>{auctionItem.currentBidPrice}</td>
+                  <td>${auctionItem.currentBidPrice}</td>
                   <td>{auctionItem.timeLeft}</td>
                   <td>
-                    <AiOutlineHeart className="text-[40px]" />
+                    <AiOutlineHeart
+                      className="text-[40px]"
+                      onClick={() => {
+                        handleItem(auctionItem);
+                        <AiFillHeart className="text-red-500" />;
+                      }}
+                    />
                   </td>
                 </tr>
               </Auction>
             ))}
           </table>
         </div>
-        <FavoriteItems />
+        <FavoriteItems addedItems={addedItems} addedBidPrice={addedBidPrice} />
       </div>
     </section>
   );

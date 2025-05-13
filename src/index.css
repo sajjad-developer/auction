@@ -22,7 +22,8 @@
 
 .footer-left,
 .footer-middle,
-.auctions {
+.auctions,
+.table-font-family {
   font-family: var(--font-sora);
   font-optical-sizing: auto;
   font-style: normal;
