@@ -20,8 +20,8 @@ function FavoriteItems({ addedItems, addedBidPrice, handleDeleteItems }) {
         </thead>
         <tbody>
           {addedItems.length > 0 ? (
-            addedItems.map((addedItem) => (
-              <tr key={addedItem.id} className="flex flex-col">
+            addedItems.map((addedItem, index) => (
+              <tr key={index} className="flex flex-col">
                 <td className="flex justify-between text-center  text-xl font-bold items-center">
                   <h2> {addedItem.title}</h2>
 
